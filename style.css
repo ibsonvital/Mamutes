@@ -1,0 +1,166 @@
+/* Paleta de Cores: */
+:root {
+    --cor-primaria: #8B1C3C; /* Vinho/Borgonha (Cor principal do Mamute) */
+    --cor-secundaria: #46B3C6; /* Azul Claro/Ciano (Cor de Destaque) */
+    --cor-fundo: #1c1c1c; /* Preto/Fundo Escuro */
+    --cor-texto-claro: #f4f4f4; /* Branco Quente */
+    --cor-card-fundo: #333; /* Fundo dos cards/seções */
+}
+
+/* Estilos Globais e Tamanho da Fonte */
+html {
+    font-size: 17px; /* Fonte base maior */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo); /* Fundo da página: Preto */
+    color: var(--cor-texto-claro);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Cabeçalho (Header) e Navegação */
+header {
+    background-color: var(--cor-fundo); /* Fundo do Cabeçalho: Preto */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--cor-primaria); /* Borda Inferior: Vinho */
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo-container {
+    background-color: var(--cor-fundo); /* Fundo da Logo: Preto (encaixe perfeito) */
+    display: inline-block; 
+    padding: 0; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+nav a {
+    color: var(--cor-texto-claro);
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.15em; 
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria); 
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Títulos e Seções */
+h2 {
+    color: var(--cor-secundaria); 
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 5px;
+    margin-top: 40px;
+    font-size: 2em; 
+}
+
+/* GALERIA DE JOGADORES */
+.galeria-jogadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.jogador {
+    background-color: var(--cor-card-fundo);
+    border: 2px solid var(--cor-primaria); 
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.jogador:hover {
+    transform: translateY(-5px);
+    border-color: var(--cor-secundaria); 
+}
+
+.jogador img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.jogador h3 { color: var(--cor-secundaria); margin: 5px 0; }
+.jogador p { font-size: 0.9em; color: var(--cor-texto-claro); margin: 2px 0; }
+
+/* LISTA DE JOGOS */
+.lista-jogos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.jogo-card {
+    background-color: var(--cor-card-fundo);
+    border-left: 5px solid var(--cor-primaria);
+    padding: 15px;
+    border-radius: 4px;
+    width: 350px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.jogo-card h4 { color: var(--cor-secundaria); margin-top: 0; }
+
+/* DESTAQUE DO JOGO */
+.jogo-destaque {
+    background-color: var(--cor-card-fundo);
+    border: 3px solid var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(70, 179, 198, 0.5);
+}
+
+.jogo-destaque h3 {
+    color: var(--cor-primaria);
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.jogo-destaque .img-destaque {
+    max-width: 100%; 
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid #555;
+}
+.jogo-card.novo-jogo {
+    border: 2px solid var(--cor-secundaria);
+    box-shadow: 0 0 10px rgba(70, 179, 198, 0.5);
+    background-color: #444;
+}
