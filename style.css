@@ -2,7 +2,7 @@
 :root {
     --cor-primaria: #8B1C3C; /* Vinho/Borgonha (Cor principal do Mamute) */
     --cor-secundaria: #46B3C6; /* Azul Claro/Ciano (Cor de Destaque) */
-    --cor-fundo: #131465; /* Preto/Fundo Escuro */
+    --cor-fundo-principal: #131465; /* NOVO: Azul Escuro (Cor de fundo principal) */
     --cor-texto-claro: #f4f4f4; /* Branco Quente */
     --cor-card-fundo: #333; /* Fundo dos cards/seções */
 }
@@ -15,7 +15,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--cor-fundo); /* Fundo da página: Preto */
+    /* FUNDO PRINCIPAL APLICADO AQUI: AZUL ESCURO */
+    background-color: var(--cor-fundo-principal); 
     color: var(--cor-texto-claro);
     line-height: 1.6;
 }
@@ -29,7 +30,8 @@ body {
 
 /* Cabeçalho (Header) e Navegação */
 header {
-    background-color: var(--cor-fundo); /* Fundo do Cabeçalho: Preto */
+    /* FUNDO DO CABEÇALHO APLICADO AQUI: AZUL ESCURO */
+    background-color: var(--cor-fundo-principal); 
     padding: 20px 0;
     text-align: center;
     border-bottom: 5px solid var(--cor-primaria); /* Borda Inferior: Vinho */
@@ -40,7 +42,8 @@ header {
 }
 
 .logo-container {
-    background-color: var(--cor-fundo); /* Fundo da Logo: Preto (encaixe perfeito) */
+    /* FUNDO DA LOGO APLICADO AQUI: AZUL ESCURO */
+    background-color: var(--cor-fundo-principal); 
     display: inline-block; 
     padding: 0; 
     border-radius: 5px;
@@ -79,7 +82,7 @@ h2 {
     font-size: 2em; 
 }
 
-/* GALERIA DE JOGADORES */
+/* GALERIA DE JOGADORES (Reutilizada na Gestão) */
 .galeria-jogadores {
     display: flex;
     flex-wrap: wrap;
@@ -163,4 +166,175 @@ h2 {
     border: 2px solid var(--cor-secundaria);
     box-shadow: 0 0 10px rgba(70, 179, 198, 0.5);
     background-color: #444;
+}
+
+/* ==========================================================
+// ESTILOS PARA A SEÇÃO LOJA E CARRINHO
+// ========================================================== */
+
+#loja {
+    display: flex;
+    flex-direction: row; /* Coloca produtos e carrinho lado a lado */
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.galeria-produtos {
+    flex: 3; /* Ocupa mais espaço */
+    min-width: 300px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto-card {
+    background-color: var(--cor-card-fundo);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.produto-card:hover {
+    transform: scale(1.02);
+}
+
+.produto-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.produto-card h3 {
+    color: var(--cor-primaria);
+    font-size: 1.1em;
+    margin: 10px 0 5px 0;
+}
+
+.produto-card .preco {
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    font-size: 1.2em;
+    margin: 5px 0 15px 0;
+}
+
+/* Estilos dos Botões */
+.btn-adicionar, .btn-finalizar, .btn-esvaziar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-adicionar {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo-principal); /* Usando a cor de fundo principal como texto escuro */
+}
+
+.btn-adicionar:hover {
+    background-color: #388ba8; 
+}
+
+.btn-esvaziar {
+    background-color: #555;
+    color: var(--cor-texto-claro);
+    margin-bottom: 20px;
+}
+.btn-esvaziar:hover { background-color: #777; }
+
+.btn-finalizar {
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: white;
+    font-size: 1.1em;
+    margin-top: 20px;
+    padding: 12px;
+}
+.btn-finalizar:hover { background-color: #128C7E; }
+
+/* Estilos do Carrinho e Formulário */
+.carrinho-container {
+    flex: 1; /* Ocupa 1 parte do espaço */
+    min-width: 300px;
+    background-color: var(--cor-card-fundo);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    align-self: flex-start; /* Fixa o carrinho no topo */
+}
+
+.carrinho-container h3 {
+    color: var(--cor-primaria);
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+#cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+#cart-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #444;
+}
+
+.carrinho-vazio {
+    font-style: italic;
+    color: #999;
+}
+
+.totais-carrinho {
+    padding-top: 10px;
+    border-top: 1px solid #555;
+}
+
+.totais-carrinho p {
+    margin: 5px 0;
+}
+
+.total-final {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+/* Estilos do Formulário */
+.formulario-pedido label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    font-size: 0.9em;
+}
+
+.formulario-pedido input, .formulario-pedido select, .formulario-pedido textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: var(--cor-texto-claro);
+}
+
+.formulario-pedido select {
+    appearance: none; /* Remove estilo padrão em alguns navegadores */
+}
+
+.formulario-pedido textarea {
+    resize: vertical;
 }
