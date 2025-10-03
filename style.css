@@ -2,7 +2,7 @@
 :root {
     --cor-primaria: #8B1C3C; /* Vinho/Borgonha (Cor principal do Mamute) */
     --cor-secundaria: #46B3C6; /* Azul Claro/Ciano (Cor de Destaque) */
-    --cor-fundo-principal: #131465; /* NOVO: Azul Escuro (Cor de fundo principal) */
+    --cor-fundo-principal: #000000; /* NOVO: Azul Escuro (Cor de fundo principal) */
     --cor-texto-claro: #f4f4f4; /* Branco Quente */
     --cor-card-fundo: #333; /* Fundo dos cards/seções */
 }
