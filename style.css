@@ -2,7 +2,7 @@
 :root {
     --cor-primaria: #8B1C3C; /* Vinho/Borgonha (Cor principal do Mamute) */
     --cor-secundaria: #46B3C6; /* Azul Claro/Ciano (Cor de Destaque) */
-    --cor-fundo-principal: #000000; /* NOVO: Preto/Fundo Escuro (Cor de fundo principal) */
+    --cor-fundo-principal: #000000; /* Preto/Fundo Escuro (Cor de fundo principal) */
     --cor-texto-claro: #f4f4f4; /* Branco Quente */
     --cor-card-fundo: #333; /* Fundo dos cards/seções */
 }
@@ -138,7 +138,7 @@ h2 {
 
 .jogo-card h4 { color: var(--cor-secundaria); margin-top: 0; }
 
-/* DESTAQUE DO JOGO E DA TORCIDA (mesmos estilos) */
+/* DESTAQUE DO JOGO E DA TORCIDA */
 .jogo-destaque {
     background-color: var(--cor-card-fundo);
     border: 3px solid var(--cor-secundaria);
@@ -155,10 +155,10 @@ h2 {
     margin-top: 0;
 }
 
-/* Imagem de Destaque (Ampla) */
+/* Imagem de Destaque (Ampla) - AJUSTADO PARA FICAR MAIOR */
 .jogo-destaque .img-destaque {
-    max-width: 100%; 
-    width: 400px; /* Largura definida para manter o destaque */
+    max-width: 600px; /* PERMITE QUE A IMAGEM SE EXPANDA ATÉ ESTE TAMANHO */
+    width: 100%; /* GARANTE QUE ELA OCUPA O MÁXIMO DO ESPAÇO NO MÓVEL */
     height: auto;
     border-radius: 8px;
     margin: 15px 0;
