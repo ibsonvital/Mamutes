@@ -1,5 +1,4 @@
 # Mamutes
-Desenvolvido durante a gestão como Vice-Presidente da Atlética
 ✨ Objetivo do Projeto
 Este website foi criado para ser o ponto central de comunicação e gerenciamento digital da Associação Acadêmica Atlética Mamutes (IFRJ). O foco é garantir que a comunidade acadêmica tenha acesso rápido e organizado a informações sobre times, eventos e produtos oficiais.
 
@@ -13,27 +12,35 @@ CSS3: Estilização completa e design responsivo (style.css), aplicando a identi
 JavaScript: Responsável pela interatividade, como a função de Modal (pop-up) para ampliação das imagens dos produtos.
 
 🎯 Principais Funcionalidades
-Ícone	Funcionalidade	Descrição
+
 📅	Agenda de Jogos	Divulgação dos próximos confrontos, como a Taça Universitária Carioca (TUC).
+
 🛒	Loja Oficial	Vitrine digital para produtos (camisas, canecas), com links diretos para o formulário de vendas.
+
 🧑‍💼	Gestão e Times	Apresentação clara da composição da Diretoria e dos atletas de destaque.
+
 📣	Engajamento	Destaque e links para a Torcida Organizada "Banda do Mamute" e outras redes sociais.
+
 📱	Responsividade	Design adaptável que garante a visualização perfeita em qualquer dispositivo.
 
-Exportar para as Planilhas
-🔗 Acesso e Estrutura
 🌐 Visualize o Projeto
 O site está hospedado e pode ser acessado em:
-[(https://ibsonvital.github.io/Mamutes/)]
+[INSIRA O LINK DO SITE AQUI]
 
 📂 Estrutura de Arquivos
 mamutes-website/
 ├── index.html          // Página inicial e estrutura principal
+
 ├── style.css           // Estilização completa do layout (Design System)
+
 ├── script.js           // Lógica do Modal de ampliação
+
 ├── images/             // Pasta recomendada para todas as imagens (logo, jogadores, produtos)
+
 └── README.md
+
 💡 Minha Contribuição (Vice-Presidente)
+
 Este projeto foi uma entrega pessoal durante minha função de Vice-Presidente da Atlética, destacando habilidades em:
 
 Desenvolvimento Front-end: Aplicação prática de HTML, CSS e JS para um produto real.
