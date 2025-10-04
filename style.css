@@ -74,17 +74,18 @@ nav a:hover {
 }
 
 /* ==========================================================
-// BANNER DO INSTAGRAM NO TOPO (NOVO)
+// BANNER DO INSTAGRAM NO TOPO (NOVO VISUAL)
 // ========================================================== */
 #banner-insta {
-    background-color: var(--cor-secundaria); /* Azul Ciano */
-    color: var(--cor-fundo-principal); 
+    /* Gradiente com cores vibrantes do Instagram */
+    background: linear-gradient(to right, #C135A4, #E1306C, #FCAF45);
+    color: var(--cor-texto-claro); 
     padding: 15px 0;
     text-align: center;
     font-size: 1.1em;
     font-weight: bold;
-    border-bottom: 3px solid var(--cor-primaria); /* Linha Vinho para destaque */
-    margin-top: -20px; /* Puxa para cima para colar no header */
+    border-bottom: none; 
+    margin-top: -20px; 
 }
 
 .container-insta {
@@ -98,16 +99,20 @@ nav a:hover {
 
 .btn-insta-topo {
     display: inline-block;
-    padding: 8px 15px;
-    background-color: var(--cor-primaria); /* Vinho */
+    padding: 10px 18px; 
+    background-color: var(--cor-fundo-principal); /* Fundo preto para destaque */
     color: var(--cor-texto-claro);
     text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    font-size: 1.0em;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); 
 }
 
 .btn-insta-topo:hover {
-    background-color: #A3284B; 
+    background-color: #1a1a1a; 
+    transform: scale(1.05);
 }
 
 /* Ajuste para dispositivos móveis */
@@ -203,10 +208,10 @@ h2 {
     margin-top: 0;
 }
 
-/* Imagem de Destaque (Ampla) - AJUSTADO PARA FICAR MAIOR */
+/* Imagem de Destaque (Ampla) - AJUSTADA PARA FICAR MAIOR */
 .jogo-destaque .img-destaque {
-    max-width: 600px; /* PERMITE QUE A IMAGEM SE EXPANDA ATÉ ESTE TAMANHO */
-    width: 100%; /* GARANTE QUE ELA OCUPA O MÁXIMO DO ESPAÇO NO MÓVEL */
+    max-width: 600px; 
+    width: 100%; 
     height: auto;
     border-radius: 8px;
     margin: 15px 0;
@@ -254,7 +259,6 @@ h2 {
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
-    /* Adiciona a indicação visual de que é clicável */
     cursor: pointer; 
 }
 
