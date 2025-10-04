@@ -74,17 +74,17 @@ nav a:hover {
 }
 
 /* ==========================================================
-// BANNER DO INSTAGRAM NO TOPO (NOVO VISUAL)
+// BANNER DO INSTAGRAM NO TOPO (VISUAL FINAL)
 // ========================================================== */
 #banner-insta {
-    /* Gradiente com cores vibrantes do Instagram */
-    background: linear-gradient(to right, #C135A4, #E1306C, #FCAF45);
+    /* Fundo PRETO para resolver o problema do azul que estava "destoando" */
+    background-color: var(--cor-fundo-principal); 
     color: var(--cor-texto-claro); 
     padding: 15px 0;
     text-align: center;
     font-size: 1.1em;
     font-weight: bold;
-    border-bottom: none; 
+    border-bottom: 3px solid var(--cor-secundaria); /* Linha ciano para separar do topo */
     margin-top: -20px; 
 }
 
@@ -97,21 +97,35 @@ nav a:hover {
     gap: 20px;
 }
 
+.container-insta p {
+    color: var(--cor-secundaria); /* Texto "Siga o Instagram" em ciano */
+}
+
 .btn-insta-topo {
     display: inline-block;
     padding: 10px 18px; 
-    background-color: var(--cor-fundo-principal); /* Fundo preto para destaque */
-    color: var(--cor-texto-claro);
+    
+    /* GRADIENTE NO TEXTO: Cores vibrantes do Instagram */
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Fundo do botão: PRETO, para contrastar com o texto colorido */
+    background-color: var(--cor-fundo-principal);
+    
     text-decoration: none;
-    font-size: 1.0em;
+    font-size: 1.3em; 
     font-weight: bold;
     border-radius: 6px;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); 
+    
+    /* Borda em cor de destaque */
+    border: 3px solid #E1306C;
 }
 
 .btn-insta-topo:hover {
-    background-color: #1a1a1a; 
+    background-color: #1a1a1a; /* Fundo levemente mais claro no hover */
     transform: scale(1.05);
 }
 
