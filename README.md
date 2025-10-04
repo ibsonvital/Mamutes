@@ -1,4 +1,5 @@
 # Mamutes
+<img width="1339" height="604" alt="Captura de tela 2025-10-04 202010" src="https://github.com/user-attachments/assets/bc3608a7-e43a-459f-a913-d612aeaf46da" />
 ✨ Objetivo do Projeto
 Este website foi criado para ser o ponto central de comunicação e gerenciamento digital da Associação Acadêmica Atlética Mamutes (IFRJ). O foco é garantir que a comunidade acadêmica tenha acesso rápido e organizado a informações sobre times, eventos e produtos oficiais.
 
@@ -25,7 +26,7 @@ JavaScript: Responsável pela interatividade, como a função de Modal (pop-up) 
 
 🌐 Visualize o Projeto
 O site está hospedado e pode ser acessado em:
-[INSIRA O LINK DO SITE AQUI]
+(https://ibsonvital.github.io/Mamutes/)
 
 📂 Estrutura de Arquivos
 mamutes-website/
@@ -48,3 +49,6 @@ Desenvolvimento Front-end: Aplicação prática de HTML, CSS e JS para um produt
 Comunicação Estratégica: Criação de uma plataforma que resolveu o desafio de centralizar a comunicação de forma eficiente.
 
 Gestão de Projeto: Liderança na concepção, design e execução, garantindo que o produto final atendesse às necessidades da diretoria e da comunidade.
+
+<img width="1338" height="595" alt="Captura de tela 2025-10-04 202604" src="https://github.com/user-attachments/assets/a28d879b-7a91-4f38-99f8-5a0d1b0a807c" />
+
