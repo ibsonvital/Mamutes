@@ -8,7 +8,7 @@ O projeto utiliza uma stack puramente Front-end focada em desempenho e simplicid
 
 HTML5: Estrutura base de todas as páginas, garantindo semântica e acessibilidade.
 
-CSS3: Estilização completa e design responsivo (style.css), aplicando a identidade visual da Atlética (Tema Dark com cores Vinho e Ciano).
+CSS3: Estilização completa e design responsivo (style.css), aplicando a identidade visual da Atlética (Tema Dark com cores VGrená e Azul Claro).
 
 JavaScript: Responsável pela interatividade, como a função de Modal (pop-up) para ampliação das imagens dos produtos.
 
